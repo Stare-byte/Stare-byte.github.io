@@ -53,7 +53,7 @@ body {
     grid-template-areas: "header header header header"
                                 "subheader subheader subheader subheader"
                              "description description video1 video1"
-                                "description description video2 video2";
+                                "description description video1 video1";
     }
 header {
     grid-area: header;
