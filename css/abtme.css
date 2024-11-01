@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+
+
+body {
+    height: auto;
+    width: auto;
+}
+
+article {
+    align-items:center;
+    width: 100%;
+    height: 100%;
+    float: none;
+}
+
+div#content {
+    grid-area: Description;
+}
+
+
+article figure img {
+    width: 50%;
+    height: 50%;
+    vertical-align: top;
+}
+
+@media only screen and (max-width: 500px) {
+    figure {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 501px) {
+    section.description {
+        grid-template-areas: "Description Description" "Image1 Image2";
+    }
+    article#image1 {
+        grid-area: Image1;
+        text-align: right;
+        float: left;
+        height: 50%;
+        width: 50%;
+    }
+    
+    article#image2 {
+        grid-area: Image2;
+        text-align: left;
+        float: right;
+        height: 50%;
+        width: 50%;
+    }
+    
+}

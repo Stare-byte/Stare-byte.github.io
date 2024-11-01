@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="css/index.css" rel="stylesheet" media="screen" />
+    <script src="script/submit.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Logan Stare's Website</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="abtme.html">About Me</a></li>
+            <li><a href="academic.html">Academics</a></li>
+            <li><a href="future.html">Future Plans</a></li>
+            <li><a href="extra.html">Extracarriculars</a></li>
+        </ul>
+    </nav>
+</header>
+    <h2>Home Page</h2>
+    <section class="description">
+        <h3>Welcome!</h3>
+        <aside>
+            <blockquote>“Programming isn’t about what you know; it’s about what you can figure out.” – Chris Pine, Learn to Program</blockquote>
+        </aside>
+        <p>
+           &emsp; Hello there! Welcome to my website, this is a website to feature information about me and
+            hopefully get a look into my work ethic, hobbies, interests, and more!
+            Whether you are a fellow student, a potential employer, or a teacher,
+            I welcome you to look into these to get an idea of my interests!
+        </p>
+        <p>
+            &emsp; I've been attending Kettering Fairmont ever since about halfway through my 4th grade year, 
+            which has allowed me to flourish as a student with the oppurtunity this wonderful community that I have been gifted.  
+            Ever since I attended Fairmont, I've been placed on the honor roll for as long as I can remember, 
+            or attending Honors/AP/IB/CTC classes.  
+        </p>
+        <p>
+            &emsp;  I plan on attaining the Computer Science Associates Degree at Sinclair Community College, 
+            before using the Wright Path program to transfer for Wright State's 4+1 Masters Program into Computer Engineering to 
+            complete my Masters Degree of Computer Engineering, of which my plans for tuition costs and attendance can further be found <a href="future.html">here</a>.
+        </p>
+        <p>
+            &emsp; This website is a product of the CTC program hosted via Sinclair Community College with Kettering Fairmont Highschool, and represents an accumulation of some of the 
+            html and css knowledge I have been taught and understood.
+        </p>
+    </section>
+    <section id="video1">
+        <h4>Short Academic Summary</h4>
+        <aside>
+            <blockquote>
+                “Code is like humor. When you have to explain it, it’s bad.” – Cory House, React and JavaScript specialist
+            </blockquote>
+        </aside>
+        <p>
+            &emsp;I have been apart of the Kettering School District since about 4th grade and have been on 
+            the honor roll ever since entering middle school, 
+            maintaining high grades and top 5% of my class due to high performance.
+            Some of my important Academic Accomplishments include: 
+            <ul>
+                <li>4.3182 Weighted GPA*</li>
+                <li>4.0 Unweighted GPA*</li>
+                <li>10th in State BPA Competition</li>
+                <li>18th in Class of 607*</li>
+                <li>Straight A Student*</li>
+            </ul>
+            <footer>*As of the 2023-2024 School Year</footer>
+        </p>
+    </section>
+    <section id="video2">
+        <h4>Contact Me!</h4>
+        <form method="post">
+            <fieldset>
+                <h5>Please fill out the following questions:</h5>
+                <ol>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" required />
+                    </li>
+                    <li>
+                        <label for="phone">Phone:</label>
+                        <input id="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                    </li>
+                    <li>Optional Questions:</li>
+                    <ol type="a">
+                        <li>How would you rate the website?</li>
+                        <input type="radio" name="rating">Very Good</input><br />
+                        <input type="radio" name="rating">Good</input><br />
+                        <input type="radio" name="rating">Bad</input><br />
+                        <input type="radio" name="rating">Very Bad</input>
+                        <li>What did you like/dislike about the website?</li>
+                        <input type="checkbox" name="webpages">Home Page</input><br />
+                        <input type="checkbox" name="webpages">About me</input><br />
+                        <input type="checkbox" name="webpages">Academics</input><br />
+                        <input type="checkbox" name="webpages">Future Plans</input><br />
+                        <input type="checkbox" name="webpages">Extracarriculars</input>
+                        <li><label for="comments">Additional Comments:</label>
+                            <textarea></textarea>
+                        </li>
+                    </ol>
+                </ol>
+                <input id="submit" type="submit" value="Submit Information!" />
+                <input id="reset" type="reset" value="Reset Fields!" />
+            </fieldset>
+        </form>
+</body>
+
+</html>

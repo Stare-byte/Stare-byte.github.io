@@ -1,0 +1,38 @@
+@charset "utf=8";
+
+@page {}
+    
+header {
+    order: 1;
+    height: 15%;
+    width: 100%;
+}
+
+body {
+    border: 1px solid black;
+}
+
+figure {
+    display: none;
+}
+
+img {
+    display: none;
+}
+
+nav ul {
+    padding-left: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    text-align: left; 
+}
+
+nav ul li a:after {
+    content: "[ " attr(href) " ]";
+}
+
+header {
+    background: none;
+}

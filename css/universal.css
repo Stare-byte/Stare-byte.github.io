@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+html {
+    background: rgb(12, 12, 12);
+}
+
+
+header {
+    grid-area: header;
+}
+
+body {
+    border-collapse: collapse;
+    border-radius: 20px;
+}
+
+section#video1 {
+    border-bottom: 1px solid;
+}
+
+header {
+    background: url(../images/headerbackground.jpg) 100%;
+}
+
+/* Heading Styles */
+
+h1 {
+    text-align: center;
+    color: white;
+    font: italic;
+}
+
+h2 {
+    background: linear-gradient(90deg, black, rgb(23, 23, 100), black, rgb(23, 23, 100), black, rgb(23, 23, 100));
+    grid-area: subheader;
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid;
+    height: auto;
+}
+
+h4 {
+    border-bottom: 1px solid;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+h5 {
+    font-size: 1em;
+    vertical-align: top;
+}
+
+/* Nav Styles */
+
+nav ul li a {
+    color: white;
+}
+nav ul li:hover {
+    background-color: rgba(64, 54, 54, 0.3)
+}
+/*Section Styles*/
+section {
+    background-color: lightgray;
+}
+
+section.description {
+    grid-area: description;
+    padding-left: 3px;
+    border-right: 1px solid;
+}
+
+section.description h3 {
+    height: 5%;
+}
+/* Media Specific Styles */
+
+@media only screen and (max-width: 500px) {
+    header {
+        padding-left: 0;
+    }
+    nav li {
+        align-items: left;
+    }
+
+    nav ul {
+        padding-left: 0px;
+    }
+    nav ul li {
+        display: block;
+        border-radius: 5px;
+        border: 3px solid gray;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+    nav ul {
+        align-items: left;
+    }
+}
+
+@media only screen and (min-width: 501px) {
+    nav ul li{
+        display: inline-block;
+        width: 15%;
+        border-radius: 5px;
+        border: 3px groove black;
+    }
+    nav ul li a {
+        text-decoration: none;
+        text-align: center;
+    }
+    nav {
+        text-align: center;
+    }
+}

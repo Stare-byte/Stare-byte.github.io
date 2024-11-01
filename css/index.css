@@ -1,0 +1,99 @@
+@charset "utf-8";
+@import url(universal.css);
+
+
+
+body p a {
+    text-decoration: none;
+}
+
+body p a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    border-radius: 5px;
+    border: 3px solid black;
+    text-align: center;
+}
+
+figure {
+    height: 100vh;
+    width: auto;
+    justify-content: center;
+}
+
+img {
+    height: 50%;
+    width: auto;
+}
+/* Section Styles */
+
+
+/* Media Specific Styling */
+@media only screen and (max-width: 500px) {
+    section#video1 {
+        display: none;
+    }
+
+    section#video2 {
+        padding: 0;
+    }
+    figure {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 501px) {
+body {
+    display: grid;
+    grid-template-columns: .4fr 1fr .5fr .6fr;
+    grid-template-rows: .3fr .2fr 2.5fr;
+    grid-template-areas: "header header header header"
+                                "subheader subheader subheader subheader"
+                             "description description video1 video1"
+                                "description description video2 video2";
+    }
+header {
+    grid-area: header;
+}
+
+blockquote {
+    height: auto;
+    width: 100px;
+    float: right;
+}
+
+section#video1 {
+    grid-area: video1;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+section#video2 {
+    grid-area: video2;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+textarea {
+    height: 10px;
+}
+
+section#video2 form fieldset input#submit {
+    align-items: left;
+}
+
+section#video2 form fieldset input#reset {
+    align-items: right;
+}
+}
+
+
